@@ -1,0 +1,55 @@
+/* 1. Reset y Variables (Opcional pero recomendado) */
+:root {
+    --verde-feria: #2d5a27;
+}
+
+/* 2. Efecto Hover Mejorado */
+.transition-hover {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    cursor: pointer;
+    will-change: transform; /* Optimiza el rendimiento en móviles */
+}
+
+.transition-hover:hover {
+    transform: translateY(-8px) scale(1.02); /* Añadimos un leve escalado */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+}
+
+/* 3. Ajuste de imágenes */
+.card-img-top {
+    height: 200px; /* Un poco más de altura para lucir mejor la fruta */
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    filter: brightness(1.05); /* Brillo sutil al pasar el mouse */
+}
+
+/* 4. Estetica de la Card */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none !important; /* Quitamos el borde gris de Bootstrap */
+    background-color: #ffffff;
+}
+
+/* 5. Ajuste para Móvil (Responsive) */
+@media (max-width: 420px) {
+    .card-img-top {
+        height: 160px; /* Imagen más pequeña en celulares para no ocupar tanta pantalla */
+    }
+    .display-5 {
+        font-size: 1.8rem; /* Título más acorde al tamaño del Note 9 */
+    }
+}
+
+/* 6. Estilo para el Modal */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.list-group-item {
+    padding: 1rem 1.25rem;
+}
