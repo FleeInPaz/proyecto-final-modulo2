@@ -1,6 +1,3 @@
-Dirrecion para GitHub : https://github.com/FleeInPaz/proyecto-final-modulo2
-
-
 # 🍎 La Feria de Limache - E-commerce Frontend
 
 ¡Bienvenido a **La Feria de Limache**! Este es un proyecto de tienda virtual desarrollado para el módulo de Frontend M2. La aplicación permite a los usuarios navegar por un catálogo de frutas frescas, agregarlas a una canasta y visualizar un resumen detallado de su compra con cálculos de impuestos en tiempo real.
